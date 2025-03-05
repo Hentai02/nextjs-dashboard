@@ -1,5 +1,6 @@
 import "@/app/ui/global.css";
 import { inter, zcool_xiaowei } from "@/app/ui/fonts";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function RootLayout({
   children,
@@ -10,6 +11,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${zcool_xiaowei.className} antialiased`}>
         {children}
+        <SpeedInsights/>
       </body>
     </html>
   );
