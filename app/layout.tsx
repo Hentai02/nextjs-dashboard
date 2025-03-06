@@ -1,5 +1,5 @@
 import "@/app/ui/global.css";
-import { inter, zcool_xiaowei } from "@/app/ui/fonts";
+import { lusitana } from "@/app/ui/fonts";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function RootLayout({
@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${zcool_xiaowei.className} antialiased`}>
+      <body className={`${lusitana.className} antialiased`}>
         {children}
         <SpeedInsights/>
       </body>
